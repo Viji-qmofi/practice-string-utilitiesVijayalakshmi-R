@@ -1,4 +1,3 @@
-// stringUtils.js
 
 // Capitalize the first letter of a string
 export function capitalize(str) {
@@ -8,7 +7,7 @@ export function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Reverse the characters in a string
+// Reverse the given string
 export function reverse(str) {
     if (typeof str !== 'string' || str.length === 0) {
         return '';
