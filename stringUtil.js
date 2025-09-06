@@ -1,6 +1,6 @@
 
 // Capitalize the first letter of a string
-export function capitalize(str) {
+function capitalize(str) {
     if (typeof str !== 'string' || str.length === 0) {
         return '';
     }
@@ -8,7 +8,7 @@ export function capitalize(str) {
 }
 
 // Reverse the given string
-export function reverse(str) {
+function reverse(str) {
     if (typeof str !== 'string' || str.length === 0) {
         return '';
     }
@@ -16,11 +16,12 @@ export function reverse(str) {
 }
 
 // Check if substring exists within string
-export function contains(str, substr) {
+function contains(str, substr) {
     if (typeof str !== 'string' || typeof substr !== 'string') {
         return false;
     }
     return str.includes(substr);
 }
 
+module.exports = {capitalize, reverse, contains};
 
